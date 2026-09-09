@@ -1,0 +1,18 @@
+    1  passwd
+    2  cp /bin/cat ~/mycat
+    3  sudo chown root ~/mycat
+    4  sudo chmod 4755 ~/mycat
+    5  ls -l ~/mycat
+    6  cat /etc/shadow
+    7  ~/mycat /etc/shadow
+    8  cp /bin/chown ~/mychown
+    9  sudo setcap cap_chown+ep ~/mychown
+   10  getcap ~/mychown
+   11  touch ~/testfile
+   12  ~/mychown nobody ~/testfile
+   13  ls -l ~/testfile
+   14  sudo visudo
+   15  sudo timedatectl set-ntp false
+   16  su - user1
+   17  sudo timedatectl set-ntp true
+   18  history > ~/history.out
